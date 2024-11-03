@@ -88,6 +88,9 @@ table {
 a:visited{
 	color: var(--clr-title);
 }
+a{
+	color: var(--clr-title);
+}
 
 img{
 	user-select: none;
