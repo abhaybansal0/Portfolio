@@ -17,22 +17,24 @@
 .home__subtitle {
     color: var(--clr-title_2);
     font-size: var(--size-base);
+    font-weight: 900;
+
 }
 
 .home__title {
     color: var(--clr-title);
-    font-size: var(--size-3xl);
+    font-size: var(--size-4xl);
     letter-spacing: -0.05rem;
     line-height: 0.9;
 }
 
 .slide_left{
-    /* animation: slide_left .1s ease-in-out; */
+    animation: slide_left .1s ease-in-out;
     animation-timeline: scroll();
 }
 
 .slide_right{
-    /* animation: slide_right .1s ease-in-out ; */
+    animation: slide_right .1s ease-in-out ;
     animation-timeline: scroll();
     margin-top: -1.8rem;
 }
