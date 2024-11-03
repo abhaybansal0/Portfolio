@@ -92,6 +92,14 @@ a{
 	color: var(--clr-title);
 }
 
+.btn{
+	color: black;
+	font-weight: 500;
+}
+.btn:visited{
+	color: black;
+}
+
 img{
 	user-select: none;
 	outline: none;

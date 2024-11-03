@@ -75,7 +75,14 @@
 }
 
 
-
+hiligh{
+    font-weight: 500;
+    color: var(--clr-hilight);
+}
+hilight{
+    font-weight: 500;
+    color: rgb(156, 5, 206);
+}
 
 
 /* XS */

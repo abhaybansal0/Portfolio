@@ -15,9 +15,6 @@ lazyloading();
 
 console.log("Welcome To My Portfolio!");
 
-window.addEventListener('resize', ()=>{
-    window.scrollTo(0, 0);
-})
 
 
 document.querySelector(".header__ham").addEventListener("click", ()=>{
@@ -26,11 +23,3 @@ document.querySelector(".header__ham").addEventListener("click", ()=>{
 document.querySelector(".header__menu").addEventListener("click", ()=>{
     document.querySelector(".header__menu").classList.toggle("hidden");
 })
-
-// document.querySelectorAll(".close").forEach(element => {
-//     element.addEventListener("click", ()=>{
-//         console.log("An list item was clicked");
-        
-//         document.querySelector(".header__menu").classList.toggle("hidden");
-//     }) 
-// });
