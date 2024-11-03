@@ -1,0 +1,275 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    overflow-x: hidden;
+}
+
+.projects_main_title{
+    color: var(--clr-title);
+    font-size: var(--size-3xl);
+}
+.project_main_description{
+    color: var(--clr-text);
+    font-size: var(--size-sm);
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+
+}
+
+.project_title{
+    color: var(--clr-title_3);
+    font-size: var(--size-2xl);
+}
+
+
+.project_card{
+    color: var(--clr-text);
+    width: 100%;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 1rem;
+    position: relative;
+}
+.reverse{
+    display: block;
+    flex-direction: column;
+}
+
+.card_img{
+    width: 90svw;
+    height: 90svw;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+
+.proc_img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+
+.card_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.project_description{
+    font-size: var(--size-sm);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.card_content .project_description{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.card_content .btn{
+    height: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+ /* XS */
+ @media screen and (min-width: 475px){
+    .projects_main_title {
+        font-size: var(--size-4xl);
+    }
+    .project_title{
+        font-size: var(--size-3xl);
+    }
+    .project_description{
+        font-size: var(--size-lg);
+    }
+    .card_img{
+        width: 29rem;
+        height: 29rem;
+    }
+ }
+
+
+ /* Sm */
+@media screen and (min-width: 640px){
+    .projects{
+        gap: 1rem;
+    }
+    
+    .projects_main_title{
+        font-size: var(--size-5xl);
+    }
+    .project_title{
+        font-size: var(--size-3xl);
+    }
+    
+    
+    .project_card{
+        width: 100%;
+        flex-direction: row;
+        gap: 1.3rem;
+        margin-top: 5rem;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .card_img{
+        height: 22rem;
+        width: 40rem;
+    }
+    
+    .card_content{
+        gap: 1.7rem;
+    }
+    
+    .project_description{
+        font-size: var(--size-base);
+    }
+
+    .card_content .btn{
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
+ /* Md */
+@media screen and (min-width: 768px){
+    .projects{
+        gap: 1rem;
+    }
+    
+    .projects_main_title{
+        font-size: var(--size-5xl);
+    }
+    .project_title{
+        font-size: var(--size-3xl);
+    }
+    
+    
+    .project_card{
+        width: 100%;
+        flex-direction: row;
+        gap: 1.3rem;
+        margin-top: 5rem;
+    }
+    .card_img{
+        height: 27rem;
+        width: 51rem;
+    }
+    .proc_img{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .card_content{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    
+    }
+    
+    .project_description{
+        font-size: var(--size-sm);
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .card_content .project_description{
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: var(--size-sm);
+
+    }
+    .card_content .btn{
+        height: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+ /* Lg */
+@media screen and (min-width: 1024px){
+
+     
+    .project_card{
+        width: 63rem;
+    }
+
+    .project_main_description{
+        width: 40rem;
+        font-size: var(--size-lg);
+    }
+
+    .card_img{
+        width: 65rem;
+        height: 35rem;
+    }
+    .proc_img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card_content{
+        gap: 2rem;
+    
+    }
+    
+
+    .project_card .project_description{
+        font-size: var(--size-lg);
+    }
+    .card_content .btn{
+        height: 4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+ /* XL */
+@media screen and (min-width: 1280px){
+    .projects_main_title{
+        font-size: var(--size-6xl);
+    }
+    .project_title{
+        font-size: var(--size-4xl);
+    }
+
+    .project_main_description{
+        font-size: var(--size-lg);
+        margin-top: 3rem;    
+    }
+}
+
+
+ /* XXL */
+/* @media screen and (min-width: 1536px){} */

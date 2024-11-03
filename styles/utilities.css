@@ -1,0 +1,151 @@
+
+ /* XS */
+ /* @media screen and (min-width: 475px){} */
+
+
+ /* Sm */
+/* @media screen and (min-width: 640px){} */
+
+
+ /* Md */
+/* @media screen and (min-width: 768px){} */
+
+
+ /* Lg */
+/* @media screen and (min-width: 1024px){} */
+
+
+ /* XL */
+/* @media screen and (min-width: 1280px){} */
+
+
+ /* XXL */
+/* @media screen and (min-width: 1536px){} */
+
+
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    width: 7em;
+    height: 3.5em;
+    border: none;
+    border-radius: 13px;
+    /* color: #f1f5f9; */
+    font-size: 1.06em;
+    background-color: #3498db;
+    box-shadow: 0px 10px 20px 5px rgba(66, 165, 245, 0.5), 0 6px 6px rgba(66, 165, 245, 0.5), 0 0 100px -10px rgba(66, 165, 245, 0.5);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.btn:hover {
+    box-shadow: 0px 15px 30px 5px rgba(66, 165, 245, 0.7), 
+                0 8px 8px rgba(66, 165, 245, 0.7), 
+                0 0 120px -10px rgba(66, 165, 245, 0.7);
+    transform: translateY(-3px);
+}
+
+
+.page{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 5rem;
+}
+
+.section {
+    margin-top: 5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.para1{
+    color: var(--xlr-text);
+}
+
+.para2{
+    color: var(--clr-text_2);
+}
+
+
+.invert{
+    filter: invert(1);
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+.loading{
+    filter: blur(60px);
+}
+.loaded{
+    filter: blur(0px);
+    transition: all 1s ease-in-out;
+}
+
+
+ /* XS */
+@media screen and (min-width: 475px){
+    .page{
+        max-width: 475px;
+    }
+}
+
+
+ /* Sm */
+@media screen and (min-width: 640px){
+    .page{
+        max-width: 640px;
+    }
+}
+
+
+ /* Md */
+@media screen and (min-width: 768px){
+    .page{
+        max-width: 768px;
+    }
+}
+
+
+ /* Lg */
+@media screen and (min-width: 1024px){
+    .page{
+        max-width: 1024px;
+    }
+
+    .section {
+        margin-top: 10rem;
+    }
+}
+
+
+ /* XL */
+@media screen and (min-width: 1280px){
+    .page{
+        max-width: 1280px;
+    }
+}
+
+
+ /* XXL */
+@media screen and (min-width: 1536px){
+    .page{
+        max-width: 1536px;
+    }
+}
+

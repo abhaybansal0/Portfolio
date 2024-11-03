@@ -1,0 +1,177 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.about_title {
+    color: var(--clr-title);
+    font-size: var(--size-3xl);
+}
+
+.about_content{
+    color: var(--clr-text);
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.about__cube {
+    width: 97%;
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: left;
+
+    animation: slide_up_from_left .5s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.about__model {
+    display: none;
+}
+
+.about__text {
+    margin-top: 0.5rem;
+    font-size: var(--size-xs);
+}
+
+.about__galaxy {
+    width: 97%;
+    height: 11rem;
+    border-radius: 20px;
+    background-color: transparent;
+    /* animation: lazy_load .5s ease-out;
+    animation-timeline: view();
+    animation-delay: .3s;
+    animation-range: entry 0; */
+
+    /* filter: blur(60px); */
+}
+
+
+
+@keyframes slide_up_from_left {
+    0% {
+        scale: 0.5; 
+        opacity: 0;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* XS */
+@media screen and (min-width: 475px) {
+
+    .about_title {
+        font-size: var(--size-4xl);
+        margin-bottom: 2rem;
+    }
+
+    .about__galaxy {
+        width: 97%;
+        height: 15rem;
+        border-radius: 20px;
+    }
+
+    .about__text {
+        margin-top: 0.5rem;
+        font-size: var(--size-base);
+    }
+}
+
+
+/* Sm */
+@media screen and (min-width: 640px){
+    .about_title {
+        font-size: var(--size-5xl);
+    }
+
+}
+
+
+/* Md */
+@media screen and (min-width: 768px) {
+    .about_title {
+        font-size: var(--size-5xl);
+    }
+    .about{
+        gap: 0.7rem;
+    }
+    .about_content{
+        flex-direction: row;
+        gap: 4px;
+        width: 100%;    
+    }
+    
+    .about__cube {
+        height: 25rem;
+    }
+
+    .about__galaxy {
+        height: 25rem;
+    }
+
+    .about__text {
+        margin-top: 0.8rem;
+        font-size: var(--size-base);
+    }
+    
+
+    
+    
+}
+
+
+/* Lg */
+@media screen and (min-width: 1024px){
+    .about_title {
+        font-size: var(--size-5xl);
+    }
+    .about_content{
+        flex-direction: row;
+        gap: 4px;
+        width: 55rem;
+    }
+    .about__cube {
+        height: 35rem;
+    }
+
+    .about__galaxy {
+        height: 35rem;
+    }
+
+    .about__text{
+        font-size: var(--size-lg);
+    }
+}
+
+
+/* XL */
+@media screen and (min-width: 1280px){
+    .about_title {
+        font-size: var(--size-6xl);
+    }
+}
+
+
+/* XXL */
+/* @media screen and (min-width: 1536px){} */

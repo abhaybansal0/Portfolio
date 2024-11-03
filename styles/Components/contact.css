@@ -1,0 +1,179 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact_title{
+    color: var(--clr-title);
+    font-size: var(--size-2xl);
+}
+
+.contact_description{
+    color: var(--clr-text);
+    text-align: center;
+    font-size: var(--size-sm);
+}
+
+.contact_details{
+    color: var(--clr-text);
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+    font-size: var(--size-base);
+}
+
+.details_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+    
+}
+.details_address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.contact_details span{
+    font-size: var(--size-lg);
+}
+
+.contact_details input{
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 10px;
+}
+ 
+ 
+footer{
+    color: var(--clr-title_2);
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--size-sm);
+}
+ 
+ 
+ /* XS */
+ @media screen and (min-width: 475px){
+    .contact{
+        gap: 3rem;
+    }
+    
+    .contact_title{
+        font-size: var(--size-4xl);
+    }
+    
+    .contact_description{
+        font-size: var(--size-sm);
+    }
+    
+    .contact_details{
+        gap: 1rem;
+    }
+    
+    .details_name{
+        flex-direction: row;
+        gap: 2rem;
+        
+    }
+    .details_address{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .contact_details span{
+        font-size: var(--size-xl);
+    }
+
+     
+     
+
+ }
+
+
+ /* Sm */
+@media screen and (min-width: 640px){
+
+    .contact_title{
+        font-size: var(--size-5xl);
+    }
+    footer{
+        font-size: var(--size-base);
+    }
+}
+
+
+ /* Md */
+@media screen and (min-width: 768px){
+    .contact{
+        gap: 3.5rem;
+    }
+    .contact_description{
+        width: 40rem;
+    }
+
+    .contact_title{
+        font-size: var(--size-5xl);
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact_description{
+        font-size: var(--size-lg);
+    }
+    
+    .contact_details{
+        gap: 1.5rem;
+    }
+    
+    .details_name{  
+        font-size: var(--size-xl);
+    }
+    .details_address{
+        font-size: var(--size-xl);
+    }
+    
+    .contact_details span{
+        font-size: var(--size-2xl);
+    }
+
+    footer{
+        font-size: var(--size-base);
+    }
+
+ 
+}
+
+
+ /* Lg */
+@media screen and (min-width: 1024px){
+    .contact_description{
+        width: 40rem;
+    }
+}
+
+
+ /* XL */
+/* @media screen and (min-width: 1280px){} */
+
+
+ /* XXL */
+/* @media screen and (min-width: 1536px){} */
+
+
+
+
